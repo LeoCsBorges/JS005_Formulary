@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper" id="user-registration">
+        <header>
+            <h1>User Registration</h1> 
+        </header>
+        <form action="" class="flex-column">
+            <label for="firstname" class="flex-column">First Name
+                <input type="text" name="firstname" id="firstname" minlength="2" maxlength="12" required>
+            </label>
+
+            <label for="lastname" class="flex-column">Last Name
+                <input type="text" name="lastname" id="lastname" minlength="2" maxlength="12" required>
+            </label>
+
+            <label for="username" class="flex-column">Username
+                <input type="text" name="username" id="username" minlength="4" maxlength="12" required>
+            </label>
+
+            <label for="password" class="flex-column">Password
+                <input type="password" name="password" id="password" minlength="4" maxlength="12" required>
+            </label>
+
+            <label for="passwordConfirm" class="flex-column">Confirm Password
+                <input type="password" name="passwordConfirm" id="passwordConfirm" minlength="4" maxlength="12" required>
+            </label>
+            
+            <label for="email" class="flex-column">E-mail
+                <input type="email" name="email" id="email" minlength="12" maxlength="30" required>
+            </label>
+            <div class="flex-row">
+                <fieldset>
+                    <legend>Gender</legend>
+                        <div><label for="male"><input type="radio" name="gender" id="male" value='male' checked> male</label></div>
+                        <div><label for="female"><input type="radio" name="gender" id="female" value='female'> female</label></div>
+                </fieldset>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+    <div class="wrapper">
+        <div id="results-title">Registered Users</div>
+        <div id="results"></div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
