@@ -156,4 +156,12 @@ form input[type=submit]:active {
         width: 40rem;
         transition: width 1s ease;
     }
+
+    #registration-message {
+        width: 100%;
+    }
+
+    #results {
+        width: 100%;
+    }
 }
